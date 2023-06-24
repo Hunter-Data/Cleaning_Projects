@@ -1,4 +1,4 @@
-This file is to document the process I went through to clean the audible dataset.
+This file is to document the process I went through to clean the audible dataset in Excel/Google Sheets.
     Converted Price colum from Indian Rupee to U.S. Dollar 1 to 0.012 ratio.
       Formated colum into currency.
     Separateded Star rating and number of ratings into individual colums
