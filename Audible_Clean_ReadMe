@@ -3,7 +3,7 @@ This file is to document the process I went through to clean the audible dataset
       Formated colum into currency.
     Separateded Star rating and number of ratings into individual colums
       Used LEFT and RIGHT fucntions to isolate each half of the string
-    Fixed the Language colums formating by using the fuction =PROPER
+    Fixed the Language colums formating by using the fuction =PROPER(F2)
       Used this to fix uncapitalized words
     Standardized the Releasedate Colum into DD-MMM-YYYY format
       Accomplished this with the custom date and time formating tool
@@ -13,6 +13,7 @@ This file is to document the process I went through to clean the audible dataset
       New colums of Hrs and mins where created 
       Calaculated the final length in minutes =(E2*60)+F2
     Spaced out First, middle, and last names of authors and narrators colums
+      Removed the Writtenby/Narratedby: from each cell in each colum with =REPLACE(C2,1,10,""), =REPLACE(C2,1,10,"")
       Utilized the function =REGEXREPLACE(B2,"(\B)([A-Z])"," $0")
       This did come with the unintended side effect separating some unwanted names
       Example: Mcwilliams becomes Mc Williams.
