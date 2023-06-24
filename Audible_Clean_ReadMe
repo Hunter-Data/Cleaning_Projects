@@ -1,0 +1,18 @@
+This file is to document the process I went through to clean the audible dataset.
+    Converted Price colum from Indian Rupee to U.S. Dollar 1 to 0.012 ratio.
+      Formated colum into currency.
+    Separateded Star rating and number of ratings into individual colums
+      Used LEFT and RIGHT fucntions to isolate each half of the string
+    Fixed the Language colums formating by using the fuction =PROPER
+      Used this to fix uncapitalized words
+    Standardized the Releasedate Colum into DD-MMM-YYYY format
+      Accomplished this with the custom date and time formating tool
+    Changed the Time colum into Length in Mins
+      Converted the format from __hrs__mins to just minutes
+      Accomplished by using the function =SPLIT(D2,CONCATENATE(SPLIT(D2,".0123456789")))
+      New colums of Hrs and mins where created 
+      Calaculated the final length in minutes =(E2*60)+F2
+    Spaced out First, middle, and last names of authors and narrators colums
+      Utilized the function =REGEXREPLACE(B2,"(\B)([A-Z])"," $0")
+      This did come with the unintended side effect separating some unwanted names
+      Example: Mcwilliams becomes Mc Williams.
